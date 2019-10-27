@@ -1,0 +1,33 @@
+.ant-card-body{
+    padding:0
+}
+.card_footer_investmentreqd{
+    float:left;
+}
+.card_footer_avgprofit{
+    float: right;
+}
+.ant-card-head-title{
+    text-align: left;
+}
+
+.card_footer_investmentreqd,
+.card_footer_avgprofit{
+    padding: 10px;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+    padding: 9px 12px;
+}
+.card_margin{
+    margin-bottom: 2%;
+}
+@media screen and (max-width: 600px){
+    .card_margin{
+        margin-top: 8%;
+    }
+    .card_footer_investmentreqd,
+    .card_footer_avgprofit{
+        font-size:12px;
+    }
+}

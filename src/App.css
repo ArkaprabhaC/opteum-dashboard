@@ -1,22 +1,87 @@
-.App {
+
+.content_layout{
+  margin-left: 250px;
+}
+.content_content{
+  background: #fff;
+  padding: 90px 24px 30px 24px;
+  margin: 0;
+  position: relative;
+  z-index:1;
+  min-height: 280;
   text-align: center;
 }
+.content_content h3{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+/*
+* Header styles
+*/
 
-.App-logo {
-  height: 40vmin;
+.header_opteumdashboard{
+  background-color:#fff;
+  border-bottom:1px solid #000;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*
+*  Header styles end
+*/
+
+.ant-tabs-bar:nth-child(0){
+  margin: 0 0 25px 0;
 }
 
-.App-link {
-  color: #09d3ac;
+/*
+* Sider Styles
+*/
+.style_sider{
+  padding-top: 40px;
+  height: 100vh;
+  position: fixed;
+  z-index: 6;
+  background: #fff;
+  left: 0;
+}
+.sider_avatar{
+  height:110px;
+  width:auto;
+  display:block;
+  margin:0 auto;
+}
+.sider_greet{
+  font-size:19px;
+  color:#fff;
+  text-align:center;
+  margin: 20px 0;
+}
+
+/*
+* Sider end
+*/ 
+
+@media screen and (max-width: 600px){
+  .content_content{
+    padding:40px 24px 30px 24px;
+  }
+  .content_layout,
+  .card_container{
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .result_cards{
+    margin-top: 0px;
+  }
+  .card_footer_investmentreqd{
+    width:25%
+  }
+  .card_footer_avgprofit{
+    width:48%
+  }
+  .card_margin{
+    margin-top: 8%;
+  }
 }
